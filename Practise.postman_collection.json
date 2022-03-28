@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "848ca8cb-e74a-47b6-95c1-8caa33ecf214",
+		"name": "Practise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/User/4c60bd7d-6769-44c5-a64f-8af4a502ee9a",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"User",
+						"4c60bd7d-6769-44c5-a64f-8af4a502ee9a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"-9182-f83ce406d272\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/User/?userId=-9182-f83ce406d272",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"User",
+						""
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "-9182-f83ce406d272"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"ShatruA\",\r\n        \"email\": \"shatrughna.shivaji@medtronic.com\",\r\n        \"address\": \"Noida\",\r\n        \"contactNo\": \"9130678478\",\r\n        \"id\": \"-9182-f83ce406d272\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/User/add",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"User",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5001/User/users",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"User",
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
