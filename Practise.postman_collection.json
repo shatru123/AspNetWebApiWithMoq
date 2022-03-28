@@ -108,6 +108,35 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Shatrughna Ambhore\",\r\n        \"email\": \"shatrughna.shivaji@medtronic.com\",\r\n        \"address\": \"Bangalore KA IN\",\r\n        \"contactNo\": \"9191\",\r\n        \"id\": \"5ffbb462-ea2a-4b75-9182-f83ce406d272\"      \r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5001/User/update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"User",
+						"update"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
